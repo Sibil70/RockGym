@@ -13,8 +13,9 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/prettyPhoto.css">
-	<link href="style.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/customization.css" rel="stylesheet">
 
 </head>
 
@@ -28,17 +29,15 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+					<a class="navbar-brand" href="./index.html"><img src="./img/logo-red-white.png" alt=""></a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active smooth-scroll"><a href="#home">Home</a></li>
-						<li class="smooth-scroll"><a href="#service">Service</a></li>
-						<li class="smooth-scroll"><a href="#team">Team</a></li>
-						<li class="smooth-scroll"><a href="#gallery">Gallery</a></li>
-						<li class="smooth-scroll"><a href="#price">Price</a></li>
-						<li class="smooth-scroll"><a href="#news">News</a></li>
-						<li class="smooth-scroll"><a href="#contact">Contact</a></li>
+						<li class="smooth-scroll"><a href="#service">Услуги</a></li>
+						<li class="smooth-scroll"><a href="#team">Команда</a></li>
+						<li class="smooth-scroll"><a href="#gallery">Галлерея</a></li>
+						<li class="smooth-scroll"><a href="#price">Цены</a></li>
+						<li class="smooth-scroll"><a href="#contact">Контакты</a></li>
 					</ul>
 				</div>
 			</div>
@@ -46,74 +45,8 @@
 	</header>
 
 	<!--Home Section-->
-	<section id="home">
-		<div class="overlay"></div>
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!--Indicator-->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-				<li data-target="#myCarousel" data-slide-to="3"></li>
-			</ol>
-			<div class="carousel-inner" role="listbox">
-				<div class="item active">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 wow bounceInUp">
-								<div class="home-text text-center">
-									<h1>ROBOT<span>X</span></h1>
-
-									<h3>WEB DEVELOPMENT SOLUTIONS</h3>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 wow bounceInUp">
-								<div class="home-text text-center">
-									<h1>ROBOT<span>X</span></h1>
-
-									<h3>WEB DEVELOPMENT SOLUTIONS</h3>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 wow bounceInUp">
-								<div class="home-text text-center">
-									<h1>ROBOT<span>X</span></h1>
-
-									<h3>WEB DEVELOPMENT SOLUTIONS</h3>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 wow bounceInUp">
-								<div class="home-text text-center">
-									<h1>ROBOT<span>X</span></h1>
-
-									<h3>WEB DEVELOPMENT SOLUTIONS</h3>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-
+	<section id="home" data-vide-bg="./video/rockgym2_compressed_960.mp4"
+		data-vide-options="loop: false, muted: true, position: 50% 50%, posterType: none, loop: true">
 	</section>
 	<!--SERVICES AREA-->
 	<section id="service">
@@ -324,7 +257,8 @@
 					<div class="section-heading text-center text-uppercase  wow shake">
 						<h2>ФОТО<span>галлерея</span></h2>
 
-						<p>Здесь ты можешь увидеть наш зал, душевую, солярий, как занимаются другие спортсмены, а чтобы почувствавать нашу атмосферу записывайся на пробное занятие и приходи!</p>
+						<p>Здесь ты можешь увидеть наш зал, душевую, солярий, как занимаются другие спортсмены, а чтобы
+							почувствавать нашу атмосферу записывайся на пробное занятие и приходи!</p>
 					</div>
 				</div>
 			</div>
@@ -508,9 +442,9 @@
 							<p>Душ</p>
 
 							<p>Полотенце</p>
-							
+
 							<p>Консультация с тренером + 3 индивидуальных занятия</p>
-							
+
 							<p>Пачка протеина в подарок</p>
 							<a href="#" class="btn text-uppercase">ЗАПИСАТЬСЯ</a>
 						</div>
@@ -560,13 +494,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-2 text-center">
-					<a href=""><img src="img/fo-logo.png" alt="logo"></a>
+					<a href="./index.html"><img class="logo" src="img/logo-black-white.png" alt="RockGym logo"></a>
 				</div>
 				<div class="col-sm-8">
 					<div class="footer-p text-center">
 						<p>© Copyright 2020, Все права защищены, Автор сайта:
-							<a href="mailto:alexandervarnaev@gmail.com"
-								style="color:black; text-decoration: underline;">Варнаев Александр</a>
+							<a class="author" href="mailto:alexandervarnaev@gmail.com"> Варнаев Александр</a>
 						</p>
 					</div>
 				</div>
@@ -575,8 +508,6 @@
 						<a href=""><i class="fa fa-facebook"></i></a>
 						<a href=""><i class="fa fa-twitter"></i></a>
 						<a href=""><i class="fa fa-instagram"></i></a>
-						<a href=""><i class="fa fa-google-plus"></i></a>
-						<a href=""><i class="fa fa-rss"></i></a>
 					</div>
 				</div>
 			</div>
@@ -589,6 +520,7 @@
 	<script src="js/wow.min.js"></script>
 	<script src="js/jquery.prettyPhoto.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.vide.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
