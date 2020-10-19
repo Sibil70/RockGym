@@ -16,6 +16,23 @@
     }
 }
 
+.single-team {
+    img {
+        filter: grayscale(1);
+    }
+    &__list {
+        padding-inline-start: 16px;
+        li {
+            list-style-type: circle;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        li:nth-child(even) {
+            color: red;
+        }
+    }
+}
+
 footer .logo {
     height: 70px;
 
