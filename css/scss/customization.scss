@@ -34,16 +34,22 @@
     img {
         filter: grayscale(1);
     }
+    h3 {
+        color: red;
+    }
     &__list {
         padding-inline-start: 16px;
+        font-size: 14px;
         li {
             list-style-type: circle;
             font-weight: 600;
             margin-bottom: 10px;
         }
-        li:nth-child(even) {
-            color: red;
-        }
+    }
+}
+#service {
+    .single-item {
+        min-height: 350px;
     }
 }
 
@@ -61,4 +67,7 @@ footer .row {
 footer .author {
     color: black;
     text-decoration: underline;
+}
+
+.single-team {
 }
