@@ -40,16 +40,62 @@
     &__list {
         padding-inline-start: 16px;
         font-size: 14px;
+        @include sm {
+            font-size: 12px;
+        }
         li {
             list-style-type: circle;
             font-weight: 600;
             margin-bottom: 10px;
+            @include md {
+                list-style-type: none;
+            }
         }
+    }
+    @include md {
+        margin-right: 0;
+        padding-bottom: 0;
     }
 }
 #service {
     .single-item {
         min-height: 350px;
+        @include sm {
+            min-height: unset;
+            margin-top: 25px;
+        }
+        h4 {
+            @include sm {
+                font-size: 16px;
+            }
+        }
+        i {
+            @include sm {
+                font-size: 55px;
+            }
+        }
+    }
+}
+
+#service,
+#team,
+#price,
+#contact {
+    @include sm {
+        padding: 0 0 50px 0;
+    }
+}
+
+#price {
+    .single-price i {
+        @include sm {
+            display: none;
+        }
+    }
+}
+h2 {
+    @include sm {
+        font-size: 25px !important;
     }
 }
 
