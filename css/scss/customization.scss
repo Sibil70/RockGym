@@ -54,11 +54,7 @@
 }
 
 footer .logo {
-    height: 70px;
-
-    @include md {
-        min-width: 100px;
-    }
+    max-width: 45px;
 }
 footer .row {
     display: flex;
