@@ -77,14 +77,5 @@ $('.gallery-btn a').click(function () {
     $(".gallery-btn a").removeClass("active");
     $(this).addClass("active");
 
-    var selector = $(this).attr('data-filter');
-    $(".gellery-item").isotope({
-        filter: selector,
-        animationOptions: {
-            duration: 750,
-            easing: 'linear',
-            queue: false
-        }
-    });
     return false;
 });
