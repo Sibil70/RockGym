@@ -122,3 +122,30 @@ footer .author {
     color: black;
     text-decoration: underline;
 }
+#my_message {
+    display: flex;
+    justify-content: center;
+}
+.response {
+    background: #fff;
+    padding: 25px;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    min-height: auto;
+    border-radius: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.response-info {
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: #515769;
+    line-height: 1.4;
+}
+
+.response-text {
+    font-size: 18px
+}

@@ -79,3 +79,18 @@ $('.gallery-btn a').click(function () {
 
     return false;
 });
+
+$('#mail').submit(function (e) {
+    e.preventDefault();
+    $.post(
+        '/mail.php',
+        $("#mail").serialize(),
+
+        function (msg) {
+            $('#mail').hide('slow');
+            $('#my_message').html(msg);
+        }
+    );
+
+    return false;
+});
