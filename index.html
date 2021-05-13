@@ -34,7 +34,6 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="smooth-scroll"><a href="#service">Услуги</a></li>
 						<li class="smooth-scroll"><a href="#team">Команда</a></li>
 						<li class="smooth-scroll"><a href="#gallery">Галерея</a></li>
 						<li class="smooth-scroll"><a href="#price">Цены</a></li>
@@ -50,61 +49,31 @@
 	<!--Home Section-->
 	<section id="home" data-vide-bg="./video/rockgym2_compressed_960.mp4"
 		data-vide-options="loop: false, muted: true, position: 50% 50%, posterType: none, loop: true">
-	</section>
-	<!--SERVICES AREA-->
-	<section id="service">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12  wow bounce">
-					<div class="section-heading text-center text-uppercase  wow bounceInUp">
-						<h2>НАШИ <span>УСЛУГИ</span></h2>
-					</div>
-				</div>
-			</div>
-		</div>
+		<div class="contact-form">
+			<div class="container" style="max-width:700px">
+				<div class="row">
+					<form id='mail'>
+						<div class="col-sm-4">
+							<label for="usr">Ваше имя</label>
+							<input type="text" name="first_name" class="form-control" id="usr">
+						</div>
+						<div class="col-sm-4">
+							<label for="email">Адрес эл. почты</label>
+							<input type="email" name="email" class="form-control" id="email">
+						</div>
+						<div class="col-sm-4">
+							<label for="number">Номер телефона</label>
+							<input type="number" name="phone" class="form-control" id="number">
+						</div>
+						<div class="col-sm-12">
+							<label for="massage">Сообщение</label>
+							<textarea class="form-control" name="message" rows="10" id="massage"></textarea>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-md-3 wow bounceInUp">
-					<div class="single-item text-center">
-						<i class="fa fa-heartbeat"></i>
-						<h4 class="text-uppercase">КАРДИОТРЕНИРОВКИ</h4>
-
-						<p>САМАЯ КРУТАЯ КАЧАЛКА В ТОМСКЕ
-						</p>
-						<a href="#contact" class="btn btn-red text-uppercase">Узнать больше</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 wow pulse">
-					<div class="single-item text-center">
-						<i class="fa fa-star"></i>
-						<h4 class="text-uppercase">Индивидуальные тренировки</h4>
-
-						<p>У ЛУЧШИХ ТРЕНЕРОВ ГОРОДА<br> (смотри наш <a href="https://www.instagram.com/rockgym_tomsk"
-								class="link">Инстраграм</a>)
-						</p>
-						<a href="#team" class="btn btn-red text-uppercase">Узнать больше</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 wow shake">
-					<div class="single-item text-center">
-						<i class="fa fa-gift"></i>
-						<h4 class="text-uppercase">БОНУСЫ</h4>
-
-						<p>ЕСТЬ.<br>РАЗНЫЕ.<br>КЛИКАЙ И ЧИТАЙ.
-						</p>
-						<a href="#price" class="btn btn-red text-uppercase">Узнать больше</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3  wow bounceIn">
-					<div class="single-item text-center">
-						<i class="fa fa-music"></i>
-						<h4 class="text-uppercase">Музыка <br> для тренировок</h4>
-
-						<p>САМАЯ КРУТАЯ КАЧАЛКА В ТОМСКЕ
-						</p>
-						<a href="#contact" class="btn btn-red text-uppercase">Узнать больше</a>
-					</div>
+							<button type="submit" name="submit" class="btn red-btn">Записаться на бесплатную
+								тренировку</button>
+						</div>
+					</form>
+					<div id="my_message"></div>
 				</div>
 			</div>
 		</div>
@@ -118,7 +87,7 @@
 			<div class="row  wow bounceInLeft">
 				<div class="col-sm-6 col-md-3">
 					<div class="single-team">
-						<img src="img/treners/dima2.jpg" alt="">
+						<img class="trener-photo" src="img/treners/dima2.jpg" alt="">
 
 						<h3>Дмитрий Попов</h3>
 
@@ -140,7 +109,7 @@
 				</div>
 				<div class="col-sm-6 col-md-3">
 					<div class="single-team">
-						<img src="img/treners/daria.jpg" alt="">
+						<img class="trener-photo" src="img/treners/daria.jpg" alt="">
 
 						<h3>Дарья Журавлева</h3>
 
@@ -158,7 +127,7 @@
 				</div>
 				<div class="col-sm-6 col-md-3">
 					<div class="single-team">
-						<img src="img/treners/ilshat2.jpg" alt="">
+						<img class="trener-photo" src="img/treners/ilshat2.jpg" alt="">
 
 						<h3>Валерий Азуров</h3>
 
@@ -319,33 +288,6 @@
 		</div>
 
 		<!-- contact massage-->
-		<div class="contact-form">
-			<div class="container">
-				<div class="row">
-					<form id='mail'>
-						<div class="col-sm-4">
-							<label for="usr">Ваше имя</label>
-							<input type="text" name="first_name" class="form-control" id="usr">
-						</div>
-						<div class="col-sm-4">
-							<label for="email">Адрес эл. почты</label>
-							<input type="email" name="email" class="form-control" id="email">
-						</div>
-						<div class="col-sm-4">
-							<label for="number">Номер телефона</label>
-							<input type="number" name="phone" class="form-control" id="number">
-						</div>
-						<div class="col-sm-12">
-							<label for="massage">Сообщение</label>
-							<textarea class="form-control" name="message" rows="10" id="massage"></textarea>
-
-							<button type="submit" name="submit" class="btn red-btn">Отправить нам сообщение</button>
-						</div>
-					</form>
-					<div id="my_message"></div>
-				</div>
-			</div>
-		</div>
 	</section>
 	<!-- footer-area-->
 	<footer>
