@@ -544,6 +544,7 @@ footer {
     width: 223px;
     object-position: center bottom;
 }
+
 .trener-photo.cover {
     object-fit: cover;
 }
