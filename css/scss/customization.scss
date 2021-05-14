@@ -150,3 +150,38 @@ footer .author {
 .response-text {
     font-size: 18px
 }
+
+.contact-form {
+
+    textarea:focus,
+    input:focus {
+        outline: none;
+        border: 2px solid red;
+    }
+
+    textarea:focus ~ label,
+    input:focus ~ label {
+        border: 2px solid red;
+    }
+    @include sm {
+        padding-top: 35px;
+    }
+    label {
+        @include sm {
+            font-size: 14px;
+        }
+    }
+    input {
+        @include sm {
+            height: 25px;
+            margin-bottom: 15px;
+        }
+    }
+    .red-btn {
+        width: fit-content;
+        @include sm {
+            font-size: 14px;
+            width: 100%;
+        }
+    }
+}
