@@ -185,3 +185,21 @@ footer .author {
         }
     }
 }
+.trener-photo {
+    object-fit: contain;
+    height: 255px;
+    width: 223px;
+    object-position: center bottom;
+}
+
+.trener-photo.cover {
+    object-fit: cover;
+}
+
+#team .row {
+    .col {
+            @include md {
+                max-width: 75%;
+            }
+    }
+}
